@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <div class="container">
+      <label class="forms">
+        <span class="forms__title">Name</span>
+        <input class="forms__input" type="text" name="name" placeholder="your name">
+      </label>
+      <label class="forms">
+        <span class="forms__title">Password</span>
+        <input class="forms__input" type="password" name="password" placeholder="your password">
+      </label>
+
+      <label class="forms">
+        <span class="forms__title">Bio</span>
+        <textarea class="forms__input _textarea" name="name" placeholder="your bio"></textarea>
+      </label>
+
+      <label class="forms">
+        <span class="forms__title">Gender</span>
+        <select class="forms__input">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </label>
+
+      <label class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="text" checked>
+        <span class="checkbox__body">
+          <span class="checkbox__icon">
+            <span class="checkmark"></span>
+          </span>
+          <span class="checkbox__text">Text</span>
+        </span>
+      </label>
+
+      <label class="radio__button">
+        <input class="radio__input" type="radio" name="contact" value="radio" checked>
+        <span class="radio__body">
+          <span class="radio__icon">
+            <span class="checkradio"></span>
+          </span>
+          <span class="checkradio__text">Text</span>
+        </span>
+      </label>
+      <label class="radio__button">
+        <input class="radio__input" type="radio" name="contact" value="radio">
+        <span class="radio__body">
+          <span class="radio__icon">
+            <span class="checkradio"></span>
+          </span>
+          <span class="checkradio__text">Text</span>
+        </span>
+      </label>
+      <label class="radio__button">
+        <input class="radio__input" type="radio" name="contact" value="radio" disabled>
+        <span class="radio__body">
+          <span class="radio__icon">
+            <span class="checkradio"></span>
+          </span>
+          <span class="checkradio__text">Text</span>
+        </span>
+      </label>
+
+      <label class="switch">
+        <input class="check__switch" type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+      <label class="switch">
+        <input class="check__switch" type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <label class="switch">
+        <input class="check__switch" type="checkbox" disabled>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </body>
+</html>

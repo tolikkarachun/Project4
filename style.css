@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-bottom: 100px;
+}
+.container {
+  display: grid;
+  gap: 15px;
+}
+
+.forms {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+.forms__title {
+  color: #6f7482;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+  letter-spacing: 0.16px;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.forms__input {
+  padding: 12px;
+  color: #3b4256;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 144%;
+  letter-spacing: 0.16px;
+  border-radius: 4px;
+  background: #f8fafc;
+  border: 1px solid transparent;
+  outline: 0;
+  width: 100%;
+}
+.forms__input:focus {
+  border-color: cornflowerblue;
+}
+.forms__input::placeholder {
+  color: #b8bcca;
+}
+.forms__input _textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 400px;
+}
+.checkbox {
+  display: inline-flex;
+  gap: 10px;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked ~ .checkbox__body .checkbox__icon {
+  background: #3b4256;
+}
+.checkbox__input:checked ~ .checkbox__body .checkmark {
+  opacity: 1;
+}
+.checkbox__input:disablet ~ .checkbox__body .checkbox__icon {
+  background: #b8bcca;
+  background-color: #b8bcca;
+  cursor: default;
+}
+.checkbox__input:disablet ~ .checkbox__body .checkbox__text {
+  cursor: default;
+}
+.checkbox__body {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+}
+.checkbox__icon {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #3b4256;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox__text {
+  color: #3b4256;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  cursor: pointer;
+}
+.checkmark {
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 2px);
+  width: 6px;
+  height: 12px;
+  border: solid #ffff;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.radio__button {
+  display: inline-flex;
+  gap: 10px;
+}
+.radio__input {
+  display: none;
+}
+.radio__input:checked ~ .radio__body .radio__icon {
+}
+.radio__input:checked ~ .radio__body .checkradio {
+  opacity: 1;
+}
+.radio__input:disablet ~ .radio__body .checkradio {
+  opacity: 1;
+  background-color: #b8bcca;
+}
+.radio__input:disablet ~ .radio__body .radio__text {
+  cursor: default;
+}
+.radio__body {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+}
+.radio__icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: #ffff;
+  border: 2px solid #3b4256;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.checkradio {
+  display: inline-block;
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+  width: 14px;
+  height: 14px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  background: #3b4256;
+  text-align: center;
+  border-radius: 100%;
+}
+.checkradio__text {
+  color: #3b4256;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  cursor: pointer;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 33px;
+}
+.check__switch {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 27px;
+  width: 27px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked ~ .slider:before {
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px);
+}
+.check__switch:checked ~ .slider {
+  background-color: #3b4256;
+}
+.check__switch:disabled ~ .slider {
+  background-color: #e2e7ed;
+}
+
